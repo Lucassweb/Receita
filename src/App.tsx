@@ -1,9 +1,8 @@
-
+import { Header } from "./components/Header";
 
 const App = () => {
-
   return (
-    <div>LUCAS GABRIEL</div>
+    <Header />
   )
 }
 
