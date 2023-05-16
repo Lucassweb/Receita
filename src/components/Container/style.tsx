@@ -1,6 +1,8 @@
 import { styled } from "styled-components";
 import Ingredientes from '../../assets/img/cursor_ingredientes.png'
 import Preparo from '../../assets/img/cursor_preparo.png'
+import Instrucoes from '../../assets/img/cursor_intrucoes.png'
+
 
 export const Conteudo = styled.div`
     max-width: 990px;
@@ -17,10 +19,7 @@ export const Conteudo = styled.div`
         color: #FF6B28;
         margin-bottom: 40px;
     }
-
-
 `
-
 export const Sessao = styled.section`
     border: 1px solid none;
     padding: 70px 100px;
@@ -45,11 +44,31 @@ export const Sessao = styled.section`
   }
 
   li {
+    line-height: 28px;
     margin-bottom: 14px;
+    font-weight: bold;
   }
 
   ul {
     margin-bottom: 50px;
   }
 
+`
+
+export const TerceiraSessao = styled.section`
+    border: 1px solid none;
+    padding: 70px 100px;
+    margin-top: 50px;
+    border-radius: 20px;
+    cursor: url(${Instrucoes}), auto;
+
+    &:hover {
+    box-shadow: 8px 8px 15px 12px rgba(205,205,205, 0.25);
+  }
+
+  p {
+    font-weight: bold;
+    line-height: 40px;
+    margin-bottom: 14px;
+  }
 `
